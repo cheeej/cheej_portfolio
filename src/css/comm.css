@@ -340,6 +340,35 @@ legend {
   content: "";
 }
 
+#tab-intro .intro-container {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#tab-intro .intro-container img {
+  width: 20vw;
+  border-radius: 10%;
+  margin-right: 50px;
+}
+#tab-intro .intro-container .intro-text {
+  text-align: start;
+}
+#tab-intro .intro-container .intro-text .line {
+  display: block;
+  width: 400px;
+  height: 1px;
+  background: #000;
+  margin: 30px 0 40px;
+}
+#tab-intro .intro-container .intro-text h3 {
+  font-size: 0.9375rem;
+  letter-spacing: 0.05rem;
+  opacity: 0.6;
+  line-height: 2;
+}
+
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
 }
@@ -392,6 +421,95 @@ a {
   opacity: 0.6;
 }
 
+.deco {
+  /* customizable snowflake styling */
+  /* Demo Purpose Only*/
+}
+.deco .snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.deco .snowflake {
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.deco .snowflake:nth-of-type(0) {
+  left: 1%;
+  animation-delay: 0s, 0s;
+}
+.deco .snowflake:nth-of-type(1) {
+  left: 10%;
+  animation-delay: 1s, 1s;
+}
+.deco .snowflake:nth-of-type(2) {
+  left: 20%;
+  animation-delay: 6s, 0.5s;
+}
+.deco .snowflake:nth-of-type(3) {
+  left: 30%;
+  animation-delay: 4s, 2s;
+}
+.deco .snowflake:nth-of-type(4) {
+  left: 40%;
+  animation-delay: 2s, 2s;
+}
+.deco .snowflake:nth-of-type(5) {
+  left: 50%;
+  animation-delay: 8s, 3s;
+}
+.deco .snowflake:nth-of-type(6) {
+  left: 60%;
+  animation-delay: 6s, 2s;
+}
+.deco .snowflake:nth-of-type(7) {
+  left: 70%;
+  animation-delay: 2.5s, 1s;
+}
+.deco .snowflake:nth-of-type(8) {
+  left: 80%;
+  animation-delay: 1s, 0s;
+}
+.deco .snowflake:nth-of-type(9) {
+  left: 90%;
+  animation-delay: 3s, 1.5s;
+}
+
 .et-hero-tabs-container {
   display: flex;
   flex-direction: row;
@@ -420,7 +538,7 @@ a {
 }
 .et-hero-tab:hover {
   color: white;
-  background: rgba(92, 148, 97, 0.8);
+  background: rgba(151, 153, 167, 0.8);
   transition: all 0.5s ease;
 }
 
@@ -429,7 +547,7 @@ a {
   bottom: 0;
   width: 0;
   height: 6px;
-  background: rgba(92, 148, 97, 0.8);
+  background: rgba(119, 124, 153, 0.8);
   transition: left 0.3s ease;
 }
 
