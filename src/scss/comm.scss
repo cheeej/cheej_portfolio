@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+// #header {
+//   background-color: #c6d4c7;
+//   filter: blur(0.8);
+// }
 .et-hero-tabs,
 .et-slide {
   display: flex;
@@ -24,6 +28,28 @@ a {
     font-size: 2rem;
     margin: 0;
     letter-spacing: 1rem;
+  }
+  .typing-demo {
+    width: 30ch;
+    animation:
+      typing 2s steps(22),
+      blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    // font-family: monospace;
+    font-size: 2rem;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
   h3 {
     font-size: 1rem;
