@@ -1,15 +1,15 @@
 #tab-intro {
   .intro-container {
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 
     img {
-      width: 20vw;
+      width: 25vw;
       border-radius: 10%;
-      margin-right: 50px;
+      margin-right: 100px;
     }
 
     .intro-text {
@@ -17,15 +17,15 @@
       .line {
         display: block;
         width: 400px;
-        height: 1px;
-        background: #000;
+        height: 0.8px;
+        background: #888888;
         margin: 30px 0 40px;
       }
       h3 {
         font-size: 0.9375rem;
         letter-spacing: 0.05rem;
         opacity: 0.6;
-        line-height: 2;
+        line-height: 1.6;
       }
     }
   }

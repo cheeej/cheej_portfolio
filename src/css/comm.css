@@ -341,16 +341,16 @@ legend {
 }
 
 #tab-intro .intro-container {
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
 #tab-intro .intro-container img {
-  width: 20vw;
+  width: 25vw;
   border-radius: 10%;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 #tab-intro .intro-container .intro-text {
   text-align: start;
@@ -358,15 +358,26 @@ legend {
 #tab-intro .intro-container .intro-text .line {
   display: block;
   width: 400px;
-  height: 1px;
-  background: #000;
+  height: 0.8px;
+  background: #888888;
   margin: 30px 0 40px;
 }
 #tab-intro .intro-container .intro-text h3 {
   font-size: 0.9375rem;
   letter-spacing: 0.05rem;
   opacity: 0.6;
-  line-height: 2;
+  line-height: 1.6;
+}
+
+.skill-text {
+  padding-top: 30px;
+  text-align: start;
+  font-size: 0.8125rem;
+  letter-spacing: 0.0625rem;
+  opacity: 0.6;
+  margin-top: 5px;
+  color: #333333;
+  font-family: "Century Gothic", "Lato", sans-serif;
 }
 
 body {
@@ -397,12 +408,12 @@ a {
 }
 .et-hero-tabs .typing-demo,
 .et-slide .typing-demo {
-  width: 30ch;
+  width: 28ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 @keyframes typing {
   from {
@@ -419,6 +430,7 @@ a {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   opacity: 0.6;
+  margin-top: 5px;
 }
 
 .deco {
@@ -449,65 +461,6 @@ a {
   100% {
     transform: translateX(0px);
   }
-}
-.deco .snowflake {
-  position: fixed;
-  top: -10%;
-  z-index: 9999;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: default;
-  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-  -webkit-animation-duration: 10s, 3s;
-  -webkit-animation-timing-function: linear, ease-in-out;
-  -webkit-animation-iteration-count: infinite, infinite;
-  -webkit-animation-play-state: running, running;
-  animation-name: snowflakes-fall, snowflakes-shake;
-  animation-duration: 10s, 3s;
-  animation-timing-function: linear, ease-in-out;
-  animation-iteration-count: infinite, infinite;
-  animation-play-state: running, running;
-}
-.deco .snowflake:nth-of-type(0) {
-  left: 1%;
-  animation-delay: 0s, 0s;
-}
-.deco .snowflake:nth-of-type(1) {
-  left: 10%;
-  animation-delay: 1s, 1s;
-}
-.deco .snowflake:nth-of-type(2) {
-  left: 20%;
-  animation-delay: 6s, 0.5s;
-}
-.deco .snowflake:nth-of-type(3) {
-  left: 30%;
-  animation-delay: 4s, 2s;
-}
-.deco .snowflake:nth-of-type(4) {
-  left: 40%;
-  animation-delay: 2s, 2s;
-}
-.deco .snowflake:nth-of-type(5) {
-  left: 50%;
-  animation-delay: 8s, 3s;
-}
-.deco .snowflake:nth-of-type(6) {
-  left: 60%;
-  animation-delay: 6s, 2s;
-}
-.deco .snowflake:nth-of-type(7) {
-  left: 70%;
-  animation-delay: 2.5s, 1s;
-}
-.deco .snowflake:nth-of-type(8) {
-  left: 80%;
-  animation-delay: 1s, 0s;
-}
-.deco .snowflake:nth-of-type(9) {
-  left: 90%;
-  animation-delay: 3s, 1.5s;
 }
 
 .et-hero-tabs-container {
@@ -554,7 +507,7 @@ a {
 @media (min-width: 800px) {
   .et-hero-tabs h1,
   .et-slide h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .et-hero-tabs h3,
   .et-slide h3 {
