@@ -111,6 +111,7 @@ article {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-break: break-all;
 }
 
 h1,
@@ -120,6 +121,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  word-break: break-all;
 }
 
 fieldset,
@@ -341,16 +343,16 @@ legend {
 }
 
 #tab-intro .intro-container {
-  width: 80%;
   display: flex;
   flex-direction: row;
+  flex-direction: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
 #tab-intro .intro-container img {
-  width: 25vw;
+  width: 20vw;
   border-radius: 10%;
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 #tab-intro .intro-container .intro-text {
   text-align: start;
@@ -362,26 +364,68 @@ legend {
   background: #888888;
   margin: 30px 0 40px;
 }
-#tab-intro .intro-container .intro-text h3 {
-  font-size: 0.9375rem;
+#tab-intro .intro-container .intro-text p {
   letter-spacing: 0.05rem;
   opacity: 0.6;
-  line-height: 1.6;
+  line-height: 1.8;
 }
-
-.skill-text {
-  padding-top: 30px;
+#tab-intro .intro-box {
+  display: flex;
+  text-align: left;
+  padding-top: 20px;
   text-align: start;
-  font-size: 0.8125rem;
+  font-size: 15px;
   letter-spacing: 0.0625rem;
   opacity: 0.6;
-  margin-top: 5px;
-  color: #333333;
+  color: #2b2b2b;
   font-family: "Century Gothic", "Lato", sans-serif;
+}
+#tab-intro .intro-box ul {
+  padding: 30px;
+  margin: 15px;
+  border-radius: 15px;
+}
+#tab-intro .intro-box ul .icon {
+  display: flex;
+}
+#tab-intro .intro-box ul .icon span {
+  padding: 0 10px 10px 0;
+}
+#tab-intro .intro-box ul .icon b {
+  font-size: 16px;
+}
+#tab-intro .skill-container {
+  display: flex;
+  padding-top: 50px;
+  text-align: start;
+  font-size: 15px;
+  letter-spacing: 0.0625rem;
+  opacity: 0.6;
+  color: #2b2b2b;
+  font-family: "Century Gothic", "Lato", sans-serif;
+}
+#tab-intro .skill-container ul {
+  padding: 30px;
+  margin: 15px;
+  background: #cecece;
+  border-radius: 10px;
+}
+#tab-intro .skill-container ul .icon {
+  display: flex;
+}
+#tab-intro .skill-container ul .icon span {
+  padding: 0 10px 10px 0;
+}
+#tab-intro .skill-container ul .icon b {
+  font-size: 16px;
 }
 
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
+}
+
+.inner {
+  max-width: 1440px;
 }
 
 a {
