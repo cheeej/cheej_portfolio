@@ -1,24 +1,36 @@
 #tab-intro {
+  height: 150vh;
+  margin-bottom: 100px;
   .intro-container {
-    // width: 80%;
     display: flex;
     flex-direction: row;
     flex-direction: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-
+    // padding: 100px 0 0;
+    a {
+      display: block;
+    }
     img {
       width: 20vw;
-      border-radius: 10%;
-      margin-right: 100px;
+      // border-radius: 10%;
+      // margin-right: 100px;
+      // border-right: 0.5px solid #000;
     }
 
     .intro-text {
       text-align: start;
+      // padding: 70px 0;
+      padding: 70px 150px 70px 0;
+      h1 {
+        font-size: 4vw;
+        color: #4e4e4e;
+        padding: 25px 0;
+      }
 
       .line {
         display: block;
-        width: 80%;
+        width: 100%;
         height: 0.05rem;
         background: #888888;
         margin: 1.875rem 0 2.5rem;
@@ -33,26 +45,31 @@
   }
 
   .skill-container {
-    // max-width: 90rem;
-    // width: 100%;
-    // margin: 0 auto;
+    width: 70%;
     display: flex;
-    padding-top: 3.125rem;
+    justify-content: center;
     text-align: start;
     font-size: 0.9375rem;
     letter-spacing: 1px;
     opacity: 0.6;
     color: #525252;
-
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
     font-family: "Century Gothic", "Lato", sans-serif;
-    ul {
-      padding: 1.875rem;
-      margin: 0.9375rem;
-      border-radius: 0.625rem;
+    .skill-wrap {
+      padding: 35px;
+      // margin: 18px 9px;
+      border-bottom: solid 0.5px #000;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
 
       &::before {
         content: "";
@@ -64,10 +81,11 @@
         width: 100%;
         // width: 1px;
         height: 100%;
-        background: #c9c9c9;
-        // background: #525252;
-        opacity: 0.5;
-        filter: blur(0.125rem);
+        // border: 1px solid #000;
+        // background: #fff;
+        // background: #d9d9d9;
+        opacity: 0.7;
+        filter: blur(2px);
         &:first-child {
           display: none;
         }
@@ -80,6 +98,44 @@
         b {
           font-size: 1.0625rem;
         }
+      }
+      em {
+        font-size: 12px;
+      }
+    }
+    ul {
+      padding: 10px;
+    }
+    .education {
+      ul {
+        li {
+          line-height: 1.6;
+        }
+      }
+    }
+    .skill {
+      ul {
+        padding: 5px;
+        li {
+          display: flex;
+          align-items: center;
+          ul {
+            display: flex;
+            li {
+              font-size: 12px;
+              padding: 10px;
+              margin: 3px;
+              border: 1px solid #585858;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+    .Career {
+      border-left: 0.5px solid #000;
+      .Career-list {
+        padding-top: 6px;
       }
     }
   }

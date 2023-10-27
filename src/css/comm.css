@@ -342,24 +342,35 @@ legend {
   content: "";
 }
 
+#tab-intro {
+  height: 150vh;
+  margin-bottom: 100px;
+}
 #tab-intro .intro-container {
   display: flex;
   flex-direction: row;
   flex-direction: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
+}
+#tab-intro .intro-container a {
+  display: block;
 }
 #tab-intro .intro-container img {
   width: 20vw;
-  border-radius: 10%;
-  margin-right: 100px;
 }
 #tab-intro .intro-container .intro-text {
   text-align: start;
+  padding: 70px 150px 70px 0;
+}
+#tab-intro .intro-container .intro-text h1 {
+  font-size: 4vw;
+  color: #4e4e4e;
+  padding: 25px 0;
 }
 #tab-intro .intro-container .intro-text .line {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 0.05rem;
   background: #888888;
   margin: 1.875rem 0 2.5rem;
@@ -371,25 +382,33 @@ legend {
   line-height: 1.8;
 }
 #tab-intro .skill-container {
+  width: 70%;
   display: flex;
-  padding-top: 3.125rem;
+  justify-content: center;
   text-align: start;
   font-size: 0.9375rem;
   letter-spacing: 1px;
   opacity: 0.6;
   color: #525252;
+  border-top: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
   font-family: "Century Gothic", "Lato", sans-serif;
 }
-#tab-intro .skill-container ul {
-  padding: 1.875rem;
-  margin: 0.9375rem;
-  border-radius: 0.625rem;
+#tab-intro .skill-container .skill-wrap {
+  padding: 35px;
+  border-bottom: solid 0.5px #000;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#tab-intro .skill-container ul::before {
+#tab-intro .skill-container .skill-wrap:nth-child(3) {
+  border-bottom: none;
+}
+#tab-intro .skill-container .skill-wrap:last-child {
+  border-bottom: none;
+}
+#tab-intro .skill-container .skill-wrap::before {
   content: "";
   position: absolute;
   top: 0;
@@ -398,21 +417,285 @@ legend {
   display: block;
   width: 100%;
   height: 100%;
-  background: #c9c9c9;
-  opacity: 0.5;
-  filter: blur(0.125rem);
+  opacity: 0.7;
+  filter: blur(2px);
 }
-#tab-intro .skill-container ul::before:first-child {
+#tab-intro .skill-container .skill-wrap::before:first-child {
   display: none;
 }
-#tab-intro .skill-container ul .icon {
+#tab-intro .skill-container .skill-wrap .icon {
   display: flex;
 }
-#tab-intro .skill-container ul .icon span {
+#tab-intro .skill-container .skill-wrap .icon span {
   padding: 0 0.625rem 0.625rem 0;
 }
-#tab-intro .skill-container ul .icon b {
+#tab-intro .skill-container .skill-wrap .icon b {
   font-size: 1.0625rem;
+}
+#tab-intro .skill-container .skill-wrap em {
+  font-size: 12px;
+}
+#tab-intro .skill-container ul {
+  padding: 10px;
+}
+#tab-intro .skill-container .education ul li {
+  line-height: 1.6;
+}
+#tab-intro .skill-container .skill ul {
+  padding: 5px;
+}
+#tab-intro .skill-container .skill ul li {
+  display: flex;
+  align-items: center;
+}
+#tab-intro .skill-container .skill ul li ul {
+  display: flex;
+}
+#tab-intro .skill-container .skill ul li ul li {
+  font-size: 12px;
+  padding: 10px;
+  margin: 3px;
+  border: 1px solid #585858;
+  border-radius: 20px;
+}
+#tab-intro .skill-container .Career {
+  border-left: 0.5px solid #000;
+}
+#tab-intro .skill-container .Career .Career-list {
+  padding-top: 6px;
+}
+
+#tab-site {
+  height: 100vh;
+}
+#tab-site html {
+  font-size: 16px;
+}
+#tab-site html,
+#tab-site body {
+  height: 100%;
+}
+#tab-site body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  overflow: hidden;
+}
+#tab-site a {
+  color: #fff;
+  text-decoration: none;
+}
+#tab-site .scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "font-2";
+  font-size: calc(0.5rem + 0.35vw);
+  z-index: 10;
+}
+#tab-site .logo {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+#tab-site .logo img {
+  display: block;
+  height: 1rem;
+  width: auto;
+}
+#tab-site ul,
+#tab-site li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#tab-site .nav {
+  position: absolute;
+  top: 2rem;
+  z-index: 10;
+}
+#tab-site .nav--left {
+  left: 1rem;
+}
+#tab-site .nav--right {
+  right: 1rem;
+}
+#tab-site .nav ul {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+}
+#tab-site .nav li {
+  display: block;
+  margin: 0 1rem;
+  padding: 0;
+}
+#tab-site .nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: calc(0.5rem + 0.35vw);
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+#tab-site .nav a span {
+  position: relative;
+}
+#tab-site .nav a span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: transform 0.75s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+#tab-site .nav a:hover span:before, #tab-site .nav a.is-active span:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#tab-site .vert-text {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+#tab-site .vert-text span {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.1;
+  transform: rotate(-90deg) translateY(15rem);
+  transform-origin: bottom left;
+  font-size: 1.35rem;
+}
+#tab-site .cart-total {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  margin-left: 1rem;
+}
+#tab-site .slider {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+}
+#tab-site .slider__text {
+  position: absolute;
+  bottom: calc(2rem + 3vw);
+  left: calc(2rem + 3vw);
+  z-index: 10;
+  font-size: calc(1rem + 4vw);
+  text-transform: uppercase;
+  transform-origin: top;
+  line-height: 1.075;
+  color: #fff;
+  font-weight: 500;
+}
+#tab-site .slider__text-line {
+  overflow: hidden;
+}
+#tab-site .slider__inner {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+#tab-site .slider__nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+#tab-site .slider-bullet {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+#tab-site .slider-bullet__text {
+  color: #fff;
+  font-size: 0.65rem;
+  margin-right: 1rem;
+}
+#tab-site .slider-bullet__line {
+  background-color: #fff;
+  height: 1px;
+  width: 1rem;
+}
+#tab-site .slider canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+#tab-site .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#tab-site .slide .slider__inner .js-slider__inner .slider canvas {
+  width: 100%;
+}
+#tab-site .slide__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+#tab-site .slide__img {
+  position: relative;
+  width: 40vw;
+  height: 70vh;
+  padding: 100px;
+  margin: 0;
+  min-width: 12.5rem;
+  transform-origin: top;
+}
+#tab-site .slide__img:first-child {
+  top: -1.5rem;
+}
+#tab-site .slide__img:last-child {
+  bottom: -1.5rem;
+}
+#tab-site .slide__img img {
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 3%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -439,20 +722,25 @@ a {
   text-align: center;
   padding: 0 2em;
 }
+.et-hero-tabs .tab-intro,
+.et-slide .tab-intro {
+  height: 150vh;
+}
 .et-hero-tabs h1,
 .et-slide h1 {
-  font-size: 2rem;
+  font-size: 50px;
   margin: 0;
   letter-spacing: 1rem;
 }
 .et-hero-tabs .typing-demo,
 .et-slide .typing-demo {
-  width: 28ch;
+  width: 20ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-size: 2.5rem;
+  font-size: 5vw;
+  color: #494949;
 }
 @keyframes typing {
   from {
@@ -543,7 +831,7 @@ a {
   transition: left 0.3s ease;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .et-hero-tabs h1,
   .et-slide h1 {
     font-size: 2rem;
