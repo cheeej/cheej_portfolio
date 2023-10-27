@@ -10,78 +10,75 @@
     img {
       width: 20vw;
       border-radius: 10%;
-      margin-right: 6.25rem;
+      margin-right: 100px;
     }
 
     .intro-text {
       text-align: start;
+
       .line {
         display: block;
-        width: 400px;
-        height: 0.8px;
+        width: 80%;
+        height: 0.05rem;
         background: #888888;
-        margin: 30px 0 40px;
+        margin: 1.875rem 0 2.5rem;
       }
       p {
-        // font-size: 0.9375rem;
-        letter-spacing: 0.05rem;
+        font-size: 1rem;
+        letter-spacing: 0.8px;
         opacity: 0.6;
         line-height: 1.8;
       }
     }
   }
-  .intro-box {
-    display: flex;
-    text-align: left;
-    padding-top: 20px;
-    text-align: start;
-    font-size: 15px;
-    letter-spacing: 0.0625rem;
-    opacity: 0.6;
-    color: #2b2b2b;
 
-    font-family: "Century Gothic", "Lato", sans-serif;
-    ul {
-      padding: 30px;
-      margin: 15px;
-      // background: #cecece;
-      border-radius: 15px;
-      .icon {
-        display: flex;
-        span {
-          padding: 0 10px 10px 0;
-        }
-        b {
-          font-size: 16px;
-        }
-      }
-    }
-  }
   .skill-container {
-    // max-width: 1440px;
+    // max-width: 90rem;
     // width: 100%;
     // margin: 0 auto;
     display: flex;
-    padding-top: 50px;
+    padding-top: 3.125rem;
     text-align: start;
-    font-size: 15px;
-    letter-spacing: 0.0625rem;
+    font-size: 0.9375rem;
+    letter-spacing: 1px;
     opacity: 0.6;
-    color: #2b2b2b;
+    color: #525252;
 
     font-family: "Century Gothic", "Lato", sans-serif;
     ul {
-      padding: 30px;
-      margin: 15px;
-      background: #cecece;
-      border-radius: 10px;
+      padding: 1.875rem;
+      margin: 0.9375rem;
+      border-radius: 0.625rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        // width: 1px;
+        height: 100%;
+        background: #c9c9c9;
+        // background: #525252;
+        opacity: 0.5;
+        filter: blur(0.125rem);
+        &:first-child {
+          display: none;
+        }
+      }
       .icon {
         display: flex;
         span {
-          padding: 0 10px 10px 0;
+          padding: 0 0.625rem 0.625rem 0;
         }
         b {
-          font-size: 16px;
+          font-size: 1.0625rem;
         }
       }
     }
