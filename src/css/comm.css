@@ -473,7 +473,7 @@ legend {
 
 #tab-site {
   height: 100vh;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -732,31 +732,52 @@ li {
   height: 100%;
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0 2rem -2rem;
 }
 
 .galley {
   padding: 100px 50px;
   display: flex;
+  align-content: stretch;
   flex-wrap: wrap;
-  margin: -1rem -1rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 .galley .galley-item {
-  flex: 1 0 24rem;
-  margin: 1rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
   overflow: hidden;
 }
 .galley .galley-item img {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 400ms ease-out;
+  margin-bottom: 20px;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 .galley .galley-item img:hover {
-  transform: scale(1.15);
+  transform: scale(0.9);
+}
+.galley .galley-item span {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.galley .galley-item .g-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.galley .galley-item .g-banner img {
+  margin-bottom: 20px;
 }
 
 @supports (display: grid) {
@@ -764,12 +785,64 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-gap: 2rem;
+    justify-items: center;
   }
   .galley .galley,
   .galley .galley-item {
     margin: 0;
   }
 }
+.g-container {
+  position: relative;
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+  height: 100%;
+}
+
+h2 {
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+}
+
+.item {
+  flex: 2;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 5;
+}
+
+.item-1 {
+  background-image: url("../../image/dar_1.jpg");
+}
+
+.logo {
+  position: absolute;
+  right: 330px;
+  top: 85px;
+}
+.logo img {
+  display: block;
+  width: 30px;
+  margin: 20px;
+  opacity: 0.5;
+}
+
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
 }

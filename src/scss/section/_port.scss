@@ -1,32 +1,64 @@
 #tab-portfolio {
   height: 100%;
   max-width: 100rem;
+
   margin: 0 auto;
-  padding: 0 2rem -2rem;
+  // padding: 0 -2rem -2rem;
 }
 .galley {
+  // @media screen and (max-width: 1024px) {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  //   grid-gap: 2rem;
+  //   flex-direction: column;
+  //   padding: 100px 0;
+  //   margin: -1rem -1rem;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
   padding: 100px 50px;
   display: flex;
+  align-content: stretch;
   flex-wrap: wrap;
-  margin: -1rem -1rem;
+  justify-content: center;
+  align-items: flex-start; // margin: -1rem -1rem;
   .galley-item {
-    flex: 1 0 24rem;
-
-    margin: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    // margin: 1rem;
     overflow: hidden;
-    // .hover-box {
-    //   background: rgba(0, 0, 0.5);
-    //   color: #fff;
-    // }
+    // box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+
     img {
       display: block;
-      width: 100%;
+      width: 90%;
       height: 100%;
       object-fit: cover;
       transition: transform 400ms ease-out;
+      margin-bottom: 20px;
+      box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
       &:hover {
-        transform: scale(1.15);
+        transform: scale(0.9);
+      }
+    }
+    span {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .g-banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      img {
+        margin-bottom: 20px;
       }
     }
   }
@@ -37,9 +69,66 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-gap: 2rem;
+    justify-items: center;
     .galley,
     .galley-item {
       margin: 0;
     }
+  }
+}
+
+//
+//
+// container
+
+.g-container {
+  position: relative;
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+  height: 100%;
+}
+
+h2 {
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+}
+
+.item {
+  flex: 2;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+
+  &:hover {
+    flex: 5;
+  }
+}
+
+.item-1 {
+  background-image: url("../../image/dar_1.jpg");
+}
+
+.logo {
+  position: absolute;
+  right: 330px;
+  top: 85px;
+
+  img {
+    display: block;
+    width: 30px;
+    margin: 20px;
+    opacity: 0.5;
   }
 }
