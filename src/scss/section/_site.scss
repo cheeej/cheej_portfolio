@@ -1,23 +1,10 @@
 #tab-site {
   height: 100vh;
-  // margin-bottom: 200px;
-  html {
-    font-size: 16px;
-  }
-
-  html,
-  body {
-    height: 100%;
-  }
-
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #111;
-    font-family: "helvetica neue", helvetica, sans-serif;
-    overflow: hidden;
-  }
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
   a {
     color: #fff;

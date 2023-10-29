@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/intro", "section/skill",
-  "section/site", "section/port", "section/contact";
+@import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/intro", "section/site",
+  "section/port", "section/contact";
 
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
@@ -16,6 +16,9 @@ a {
 //   background-color: #c6d4c7;
 //   filter: blur(0.8);
 // }
+#header {
+  margin: 0;
+}
 .et-hero-tabs,
 .et-slide {
   display: flex;
@@ -27,6 +30,7 @@ a {
   background: #eee;
   text-align: center;
   padding: 0 2em;
+  // margin-bottom: 300px;
   .tab-intro {
     height: 150vh;
   }

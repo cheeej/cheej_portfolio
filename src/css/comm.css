@@ -473,20 +473,10 @@ legend {
 
 #tab-site {
   height: 100vh;
-}
-#tab-site html {
-  font-size: 16px;
-}
-#tab-site html,
-#tab-site body {
-  height: 100%;
-}
-#tab-site body {
+  margin-bottom: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #111;
-  font-family: "helvetica neue", helvetica, sans-serif;
   overflow: hidden;
 }
 #tab-site a {
@@ -738,6 +728,48 @@ li {
   padding: 10px;
 }
 
+#tab-portfolio {
+  height: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem -2rem;
+}
+
+.galley {
+  padding: 100px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+}
+.galley .galley-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.galley .galley-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+.galley .galley-item img:hover {
+  transform: scale(1.15);
+}
+
+@supports (display: grid) {
+  .galley {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+  .galley .galley,
+  .galley .galley-item {
+    margin: 0;
+  }
+}
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
 }
@@ -748,6 +780,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+#header {
+  margin: 0;
 }
 
 .et-hero-tabs,
