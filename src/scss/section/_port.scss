@@ -5,6 +5,9 @@
   margin: 0 auto;
   // padding: 0 -2rem -2rem;
 }
+h1 {
+  font-size: 4vw;
+}
 .galley {
   // @media screen and (max-width: 1024px) {
   //   display: grid;
@@ -91,10 +94,10 @@
 
 h2 {
   margin-bottom: 45px;
-  font-family: "Oswald", sans-serif;
-  font-size: 44px;
+  // font-family: "Oswald", sans-serif;
+  font-size: 35px;
   text-transform: uppercase;
-  color: #424242;
+  color: #757575;
 }
 .gallery-wrap {
   display: flex;
