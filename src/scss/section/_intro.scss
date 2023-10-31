@@ -1,6 +1,13 @@
 #tab-intro {
   @media screen and (max-width: 1280px) {
     height: 250vh;
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 800px) {
+    height: 230vh;
+  }
+  @media screen and (max-width: 1280px) {
+    height: 280vh;
   }
   height: 150vh;
   margin-bottom: 100px;
@@ -20,6 +27,12 @@
       display: block;
     }
     img {
+      @media screen and (max-width: 1280px) {
+        width: 30vw;
+      }
+      @media screen and (max-width: 800px) {
+        width: 50vw;
+      }
       width: 20vw;
       // border-radius: 10%;
       // margin-right: 100px;
@@ -36,6 +49,10 @@
       padding: 70px 50px 70px 0;
       margin-left: 50px;
       h1 {
+        @media screen and (max-width: 800px) {
+          font-size: 5vw;
+        }
+
         font-size: 4vw;
         color: #4e4e4e;
         padding: 25px 0;
@@ -79,6 +96,9 @@
       align-items: stretch;
     }
     .skill-wrap {
+      @media screen and (max-width: 800px) {
+        padding: 35px 0;
+      }
       padding: 35px;
       // margin: 18px 9px;
       border-bottom: solid 0.5px #000;

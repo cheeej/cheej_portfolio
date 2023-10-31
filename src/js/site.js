@@ -196,7 +196,7 @@ class Slider {
   }
 
   transitionNext() {
-    TweenMax.to(this.mat.uniforms.dispPower, 2.5, {
+    TweenMax.to(this.mat.uniforms.dispPower, 3, {
       value: 1,
       ease: Expo.easeInOut,
       onUpdate: this.render,
