@@ -346,12 +346,23 @@ legend {
   height: 150vh;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1280px) {
+  #tab-intro {
+    height: 250vh;
+  }
+}
 #tab-intro .intro-container {
   display: flex;
   flex-direction: row;
   flex-direction: wrap;
   justify-content: center;
   align-items: flex-end;
+}
+@media screen and (max-width: 1280px) {
+  #tab-intro .intro-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 #tab-intro .intro-container a {
   display: block;
@@ -363,6 +374,11 @@ legend {
   text-align: start;
   padding: 70px 50px 70px 0;
   margin-left: 50px;
+}
+@media screen and (max-width: 1280px) {
+  #tab-intro .intro-container .intro-text {
+    text-align: center;
+  }
 }
 #tab-intro .intro-container .intro-text h1 {
   font-size: 4vw;
@@ -394,6 +410,11 @@ legend {
   border-top: 0.5px solid #000;
   border-bottom: 0.5px solid #000;
   font-family: "Century Gothic", "Lato", sans-serif;
+}
+@media screen and (max-width: 1280px) {
+  #tab-intro .skill-container {
+    flex-direction: column;
+  }
 }
 #tab-intro .skill-container .skill-left {
   display: flex;
@@ -437,7 +458,7 @@ legend {
   padding: 0 0.625rem 0.625rem 0;
 }
 #tab-intro .skill-container .skill-wrap .icon b {
-  font-size: 1.0625rem;
+  font-size: 20px;
 }
 #tab-intro .skill-container .skill-wrap em {
   font-size: 12px;
@@ -467,6 +488,12 @@ legend {
 }
 #tab-intro .skill-container .Career {
   border-left: 0.5px solid #000;
+}
+@media screen and (max-width: 1280px) {
+  #tab-intro .skill-container .Career {
+    border-top: 0.5px solid #000;
+    border-left: none;
+  }
 }
 #tab-intro .skill-container .Career .Career-list {
   padding-top: 6px;

@@ -1,7 +1,15 @@
 #tab-intro {
+  @media screen and (max-width: 1280px) {
+    height: 250vh;
+  }
   height: 150vh;
   margin-bottom: 100px;
   .intro-container {
+    @media screen and (max-width: 1280px) {
+      flex-direction: column-reverse;
+
+      align-items: center;
+    }
     display: flex;
     flex-direction: row;
     flex-direction: wrap;
@@ -19,6 +27,10 @@
     }
 
     .intro-text {
+      @media screen and (max-width: 1280px) {
+        text-align: center;
+      }
+
       text-align: start;
       // padding: 70px 0;
       padding: 70px 50px 70px 0;
@@ -46,6 +58,9 @@
   }
 
   .skill-container {
+    @media screen and (max-width: 1280px) {
+      flex-direction: column;
+    }
     width: 70%;
     display: flex;
     justify-content: center;
@@ -103,7 +118,7 @@
           padding: 0 0.625rem 0.625rem 0;
         }
         b {
-          font-size: 1.0625rem;
+          font-size: 20px;
         }
       }
       em {
@@ -140,6 +155,10 @@
       }
     }
     .Career {
+      @media screen and (max-width: 1280px) {
+        border-top: 0.5px solid #000;
+        border-left: none;
+      }
       border-left: 0.5px solid #000;
       .Career-list {
         padding-top: 6px;
